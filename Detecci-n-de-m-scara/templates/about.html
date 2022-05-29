@@ -1,0 +1,126 @@
+{% extends "layout.html" %} {% block body %}
+
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url(' {{ url_for('static' , filename='assets/img/48074.jpg') }} ')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1 style="color: white">About Us</h1>
+          <!--                            <span class="subheading">This is what I do.</span>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<!--
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+-->
+<section id="team" class="team">
+  <div class="container">
+    <div class="section-title">
+      <h2>Team</h2>
+      <!--              <p>Sit sint consectetur velit quos quisquam cupiditate nemo qui</p>-->
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img
+            src="{{ url_for('static' , filename = 'assets/img/IMG_4891.jpeg') }}"
+            alt=""
+          />
+          <h4>Patel Deep R.</h4>
+          <span>LDRP-ITR</span>
+          <p>
+            Bachelor of Engineering in Information Technology, Batch : 2019-23
+          </p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img
+            src="{{ url_for('static' , filename = 'assets/img/Dhvnil.jpg') }}"
+            alt=""
+          />
+          <h4>Prajapati Dhvanil N.</h4>
+          <span>LDRP-ITR</span>
+          <p>
+            Bachelor of Engineering in Information Technology, Batch : 2019-23
+          </p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img
+            src="{{ url_for('static' , filename = 'assets/img/11.jpg') }}"
+            alt=""
+          />
+          <h4>Kothari Jainam G.</h4>
+          <span>LDRP-ITR</span>
+          <p>
+            Bachelor of Engineering in Information Technology, Batch : 2019-23
+          </p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="member">
+          <img
+            src="{{ url_for('static' , filename = 'assets/img/kunj.jpg') }}"
+            alt=""
+          />
+          <h4>Bunha Kunj C.</h4>
+          <span>LDRP-ITR</span>
+          <p>
+            Bachelor of Engineering in Information Technology, Batch : 2019-23
+          </p>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer-->
+{% endblock %}

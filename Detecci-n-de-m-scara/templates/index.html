@@ -1,0 +1,46 @@
+{% extends "layout.html" %} {% block body %}
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url(' {{ url_for('static' , filename='assets/img/Facemask-Detection-Blog.jpg') }} ')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="site-heading">
+          <h1 style="color: white">Detección de máscara</h1>
+          <!--<span class="subheading">A Blog Theme by Start Bootstrap</span>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+  <div class="row gx-4 gx-lg-5 justify-content-center">
+    <div class="col-md-10 col-lg-8 col-xl-7">
+      <p style="font-family: sans-serif; font-size: 25px">
+        Since the inception of Machine Learning and Image Processing, the Face
+        Detection has been a great revolution. But since the rise in Covid-19 in
+        the world, it has seen a great deal of changes over the past few years.
+        The major focus is to detect if the human is wearing the face mask
+        properly or not. Several different face mask detection models have been
+        developed using various approaches and algorithms.
+      </p>
+      <br />
+      <p style="font-family: sans-serif; font-size: 25px">
+        “Detección de Mascara” is the Spanish translation of Detection of Mask.
+        “Detección de Mascara” is the Deep Learning model which uses the python
+        libraries TensorFlow, Keras, OpenCV and NumPy to detect Face Masks. This
+        model uses the resources very efficiently, so it can be used for
+        maintaining the medical hygiene. This model uses the Single Shot
+        Detector(SSD) as the face detector and MobileNetV2 architecture as the
+        framework for the classifier. MobileNetV2 is very lightweight and can be
+        used in embedded devices like Raspberry pi,NVIDIA, etc. to perform
+        real-time face mask detection.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer-->
+{% endblock %}

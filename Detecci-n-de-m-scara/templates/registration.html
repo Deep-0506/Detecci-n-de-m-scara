@@ -1,0 +1,152 @@
+{% extends "layout.html" %} {% block body %}
+
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url(' {{ url_for('static' , filename='assets/img/20f8fbc5167d7d946d0221a2997cd6e2.jpg') }} ')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading">
+          <h1 style="color: white" align="center">Register Now</h1>
+          <!--
+                            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on August 24, 2021
+                            </span>
+-->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Post Content-->
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="my-5">
+          <!-- * * * * * * * * * * * * * * *-->
+          <!-- * * SB Forms Contact Form * *-->
+          <!-- * * * * * * * * * * * * * * *-->
+          <!-- This form is pre-integrated with SB Forms.-->
+          <!-- To make this form functional, sign up at-->
+          <!-- https://startbootstrap.com/solution/contact-forms-->
+          <!-- to get an API token!-->
+          <form
+            id="contactForm"
+            data-sb-form-api-token="API_TOKEN"
+            action="/registration"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="form-floating">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name..."
+                data-sb-validations="required"
+              />
+              <label for="name">Name</label>
+              <div class="invalid-feedback" data-sb-feedback="name:required">
+                A name is required.
+              </div>
+            </div>
+            <div class="form-floating">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email..."
+                data-sb-validations="required,email"
+              />
+              <label for="email">Email address</label>
+              <div class="invalid-feedback" data-sb-feedback="email:required">
+                An email is required.
+              </div>
+              <div class="invalid-feedback" data-sb-feedback="email:email">
+                Email is not valid.
+              </div>
+            </div>
+            <div class="form-floating">
+              <input
+                class="form-control"
+                id="phone"
+                name="phone_number"
+                type="tel"
+                placeholder="Enter your phone number..."
+                data-sb-validations="required"
+              />
+              <label for="phone">Phone Number</label>
+              <div class="invalid-feedback" data-sb-feedback="phone:required">
+                A phone number is required.
+              </div>
+            </div>
+            <div class="form-floating">
+              <label for="message" style="font-size: 15px"
+                >Upload your image</label
+              >
+
+              <input
+                class="form-control"
+                style="padding-left: 15rem"
+                id="img"
+                name="image"
+                type="file"
+                placeholder="Upload your image..."
+                accept="image/*"
+                required
+              />
+
+              <div class="invalid-feedback" data-sb-feedback="img:required">
+                An Image is required.
+              </div>
+            </div>
+            <br />
+            <!-- Submit success message-->
+            <!---->
+            <!-- This is what your users will see when the form-->
+            <!-- has successfully submitted-->
+            <div class="d-none" id="submitSuccessMessage">
+              <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                To activate this form, sign up at
+                <br />
+                <a href="https://startbootstrap.com/solution/contact-forms"
+                  >https://startbootstrap.com/solution/contact-forms</a
+                >
+              </div>
+            </div>
+            <br />
+            <br />
+            <!-- Submit error message-->
+            <!---->
+            <!-- This is what your users will see when there is-->
+            <!-- an error submitting the form-->
+            <div class="d-none" id="submitErrorMessage">
+              <div class="text-center text-danger mb-3">
+                Error sending message!
+              </div>
+            </div>
+            <!-- Submit Button-->
+            <button
+              class="btn btn-primary text-uppercase disabled"
+              id="submitButton"
+              type="submit"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Footer-->
+{% endblock %}

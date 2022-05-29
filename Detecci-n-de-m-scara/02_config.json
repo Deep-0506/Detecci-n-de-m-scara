@@ -1,0 +1,8 @@
+{
+    "parameters":
+    {
+        "Local_Server":"True",
+        "Local_URI":"mysql://root:@localhost/project",
+        "Prod_URI":"mysql://root:@localhost/project"
+    }
+}
